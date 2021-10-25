@@ -1,0 +1,208 @@
+//1 - 100 arasi ededleri ekrana cixar
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            for (int i = 0; i <= 100; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+}
+
+
+//1-100 arasi tek ededler
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i < 100; i += 2)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        }
+    }
+
+
+
+//1 -10 arasi edeleri cap et
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1 ; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+            }  
+
+        }
+    }
+ }
+
+
+//1-10 ARASI ededlerin toplami
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int cem = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                cem += i;
+            }
+            Console.WriteLine("1 den 10'a qeder ededlerin toplamı : " + cem);
+
+        }
+    }
+ }
+
+
+//dairenin sahesi ve perimetr
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           const double PI = 3.14;
+            double radius, sahe, perimetr;
+            Console.Write("Dairenin radiusunu daxil edin:");
+
+            
+            radius = Convert.ToDouble(Console.ReadLine());
+
+            
+            sahe = PI * radius * radius;
+
+            
+            perimetr = 2 * PI * radius;
+
+           
+            Console.WriteLine("sahe: " + sahe);
+            Console.WriteLine("perimetr: " + perimetr);  
+
+        }
+    }
+ }
+
+//ededin 2 misli
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int cem = 0;
+            Console.WriteLine("ededi daxil edin :");
+            cem = Convert.ToInt32(Console.ReadLine());
+            {
+                cem = cem * 2;
+            }
+            Console.WriteLine("ededin 2 misli :" + cem);   
+
+        }
+    }
+ }
+
+//istifadeci parol
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            {
+                            int pass, sifre = 1234, syc = 0;
+                            string userıd;
+                            Console.WriteLine("user id ?");
+                            userıd = Console.ReadLine();
+                            if (userıd == "admin")
+                            {
+                            m:;
+                                Console.WriteLine("parolu daxil edin:");
+                                string okunanpass = Console.ReadLine();
+                                pass = Convert.ToInt32(okunanpass);
+                                if (pass == sifre)
+                                    Console.WriteLine("tebrikler sifreniz doğrudur");
+                                else
+                                {
+                                    Console.WriteLine("şifreniz yanlışdi! qalan haqqınız={0}", 2 - syc);
+                                    syc++;
+                                    if (syc == 3)
+                                        Environment.Exit(0);
+                                    goto m;
+                                }
+
+                            }
+                            else
+                            {
+                                Console.WriteLine("istifadeci adiniz yanlisdi!");
+                            }
+                        }  
+
+            }
+        }
+ }
+
+
+//ededleri ve emeliyyati daxil edin hesablasin
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+    {
+        int x, y;
+        char operation;
+         
+        Console.Write("Input first number: ");
+        x = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Input operation: ");
+        operation = Convert.ToChar(Console.ReadLine());
+        Console.Write("Input second number: ");
+        y = Convert.ToInt32(Console.ReadLine());
+         
+        if (operation=='+')
+            Console.WriteLine("{0} + {1} = {2}", x, y, x+y);
+        else if (operation=='-')
+            Console.WriteLine("{0} - {1} = {2}", x, y, x-y);
+        else if ((operation=='x') || (operation=='*'))
+            Console.WriteLine("{0} * {1} = {2}", x, y, x*y);
+        else if (operation=='/')
+            Console.WriteLine("{0} / {1} = {2}", x, y, x/y);
+        else
+            Console.WriteLine("Wrong Character");
+    }
+}
+}
+}
+
