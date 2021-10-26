@@ -206,3 +206,20 @@ namespace ConsoleApp1
 }
 }
 
+ // pramida meslesi amma deqiq bilmirem
+ 
+ int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Width for the Triangle: ");
+            int w = Convert.ToInt32(Console.ReadLine());
+
+            int b = a;
+            int c;
+            for (b = 0; b <= w; b++)
+            {
+                for (c = a; c >= b; c--)
+                {
+                    Console.Write(a);
+                }
+                Console.WriteLine("");
+            }
+
